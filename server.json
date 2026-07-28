@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.gentkey/mcp",
+  "title": "Gentkey",
+  "description": "One MCP URL for all your connectors — scoped writes, enforced constraints, and a full audit trail.",
+  "version": "0.1.0",
+  "websiteUrl": "https://gentkey.com",
+  "repository": {
+    "url": "https://github.com/xekor/gentkey-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.gentkey.com/mcp"
+    }
+  ]
+}
