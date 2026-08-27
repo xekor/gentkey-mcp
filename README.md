@@ -42,12 +42,18 @@ Any other client that speaks Streamable HTTP with OAuth works the same way.
 
 ## What you can connect
 
-- **Native connectors** with deep, semantic constraints: Google Ads (operation-typed capability grants, dollar caps on budget changes), BigQuery (statement-typed grants), Apple Search Ads, App Store Connect, and Google Search Console.
-- **A directory of 1,700+ services** reachable by MCP passthrough, OpenAPI, or GraphQL — Notion, Linear, Slack, Stripe, Figma, Canva, Atlassian, HubSpot, Supabase, Sentry, RevenueCat, Superwall, and more. Upstream tools are proxied verbatim (schemas included) but default to write-gated: only curated read tools run without a grant, and every call is audited either way.
+- **Native connectors** with deep, semantic constraints: Google Ads (operation-typed capability grants, dollar caps on budget changes), Meta Ads (currency-aware budget deltas, dry-run plan/commit), BigQuery (statement-typed grants), Apple Search Ads, App Store Connect, Google Search Console, RevenueCat, and Superwall (per-resource capability maps).
+- **A directory of 1,798 services** reachable by MCP passthrough, OpenAPI, or GraphQL — Notion, Linear, Slack, Stripe, Figma, Canva, Atlassian, HubSpot, Supabase, Sentry, and more. Upstream tools are proxied verbatim (schemas included) but default to write-gated: only curated read tools run without a grant, and every call is audited either way.
+
+Full list with per-connector grant taxonomies: [docs/connectors.md](docs/connectors.md).
 
 ## About this repository
 
 Gentkey's source is proprietary. This repository hosts the public documentation, the MCP registry manifest ([`server.json`](server.json)), and the **issue tracker** — bug reports, questions, and connector requests are welcome in [Issues](../../issues).
+
+- [Connector catalog & grant taxonomies](docs/connectors.md)
+- [Security model](docs/security.md)
+- [FAQ](docs/faq.md)
 
 - Website: [gentkey.com](https://gentkey.com)
 - App: [app.gentkey.com](https://app.gentkey.com)
